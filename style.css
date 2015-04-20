@@ -337,6 +337,10 @@ a:active, a:focus, a:hover {
   width: 335px;
 }
 
+.img_slider {
+  margin-top: -36px;
+}
+
 .header_search {
 }
 
