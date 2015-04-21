@@ -151,7 +151,11 @@ a:active, a:focus, a:hover {
   font-size: 0;
 }
 
-.header_top--redes li {
+.header_top--redes li:nth-child(n+2) {
+  margin-left: 27px;
+}
+
+.header_top--redes a {
   background: #b0b0b0;
   border-radius: 50%;
   height: 40px;
@@ -159,10 +163,6 @@ a:active, a:focus, a:hover {
   position: relative;
   text-align: center;
   width: 40px;
-}
-
-.header_top--redes li:nth-child(n+2) {
-  margin-left: 27px;
 }
 
 .header_top--redes i {
@@ -192,7 +192,7 @@ a:active, a:focus, a:hover {
   position: relative;
 }
 
-.header_top--idiomas select {
+/*.header_top--idiomas select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -204,9 +204,9 @@ a:active, a:focus, a:hover {
   height: 30px;
   padding-left: 5px;
   width: 100%;
-}
+}*/
 
-.header_top--idiomas:before {
+/*.header_top--idiomas:before {
   color: #595959;
   content: ">";
   cursor: pointer;
@@ -231,7 +231,7 @@ a:active, a:focus, a:hover {
   right: 0;
   top: 0;
   width: 32px;
-}
+}*/
 
 .header_bottom {
   background: url('img/header/bg_header.jpg');
@@ -281,7 +281,6 @@ a:active, a:focus, a:hover {
 
 .header_slider {
   position: relative;
-  z-index: 0;
 }
 
 .header_slider--search {
@@ -331,32 +330,167 @@ a:active, a:focus, a:hover {
   height: 164px;
   margin-left: 15px;
   margin: auto;
-  padding: 27px 0 23px 25px;
+  padding: 13px 0 23px 25px;
   position: absolute;
   top: 0;
   width: 335px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.slider_text:before {
+  background-image: url('img/header/slider_text.png');
+  content: '';
+  height: 172px;
+  left: -4px;
+  position: absolute;
+  top: -6px;
+  width: 344px;
+}
+
+
+.slider_text > *{
+  display: block;
+  line-height: 120%;
+}
+
+.slider_text span {
+  font-size: 38px;
+}
+
+.slider_text strong {
+  font-size: 48px;
+}
+
+.slider_text small {
+  font-size: 23px;
 }
 
 .img_slider {
   margin-top: -36px;
 }
 
+
+.content_body {
+  margin-top: -17px;
+  overflow: hidden;
+  padding-bottom: 17px;
+}
+
 .header_search {
+  background-image: url('img/section/bg_buscador.jpg');
+  border-radius: 6px;
+  box-shadow: 0px 1px 1px 1px rgba(222, 222, 222, 0.75);
+  font-size: 0;
+  overflow: hidden;
+  padding: 24px 42px 5px 30px;
+}
+
+.header_search form > *{
+  font-size: 16px;
 }
 
 .small-module {
+  width: 33.3%;
+  display: inline-block;
+  vertical-align: top;
 }
 
-.selection-box {
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #fff;
+  border: 1px solid #e4e5e1;
+  color: #aaaaaa;
+  cursor: pointer;
+  font-size: 12px;
+  height: 30px;
+  padding-left: 5px;
+  width: 100%;
 }
 
-.large-module {
+.selection_box {
+  position: relative;
+  font-size: 0;
+}
+
+.selection_box:before {
+  color: #595959;
+  content: ">";
+  cursor: pointer;
+  font: 700 normal 13px 'Roboto Slab', serif;
+  pointer-events: none;
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  transform: rotate(90deg);
+  z-index: 1;
+}
+
+.selection_box:after {
+  background: #f7d917;
+  bottom: 0;
+  box-shadow: 0px 1px 1px 0px rgba(228, 229, 225, 0.75);
+  content: "";
+  height: 28px;
+  margin: auto;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 32px;
+}
+
+.header_search .selector {
+  font-size: 0;
+}
+
+.selector .selection_box {
+  display: inline-block;
+  width: 35%;
+}
+
+.selector select {
+  width: 100%;
+}
+
+.header_search input {
+  float: right;
+  background: #f7d917;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font: 700 normal 13px 'Roboto Slab', serif;
+  color: #525151;
 }
 
 .header_phone {
+  background-image: url('img/section/bg_phone.jpg');
+  border-radius: 6px;
+  box-shadow: 0px 1px 1px 1px rgba(222, 222, 222, 0.75);
+  text-align: center;
+}
+
+.header_phone a {
+  color: #fff;
+  display: block;
+  font-size: 35px;
+  font-weight: 900;
+  text-shadow: 0px 1px 1px rgba(110, 96, 8, 0.75);
+}
+
+.header_phone span {
+  display: block;
+  padding: 0 27px;
+  text-align: left;
 }
 
 .section {
+  background: #fafafa;
+}
+
+.section li{
+  width: 100%;
 }
 
 .section_top {
