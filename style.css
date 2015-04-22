@@ -80,7 +80,8 @@ a:active, a:focus, a:hover {
 
 [class^="icon-"], [class*=" icon-"], 
 .section li:before,
-.section h2:before {
+.section h2:before,
+.footer_top li:before {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -140,7 +141,7 @@ a:active, a:focus, a:hover {
   content: "\e606";
 }
 
-.section li:before {
+.section li:before, .footer_top li:before {
   border-radius: 50%;
   color: #f7d917;
   content: "\e607";
@@ -495,7 +496,7 @@ select {
   margin-bottom: 36px;
 }
 
-.section li{
+.section li, .footer_top li{
   width: 100%;
 }
 
@@ -556,18 +557,22 @@ select {
 
 .footer_top {
   background: url('img/footer/bgFooter.jpg');
-  padding: 28px 0 36px;
+  padding: 23px 0;
 }
 
 .footer_top a {
   color: #fafafa;
 }
 
-.footer_top .icons > * {
-  position: relative;
+.footer_top .icons a:first-child {
+  margin-bottom: 16px
 }
 
-.footer_top [class^="icon-"]:nth-child(odd), 
+.footer_top .icons a:last-child {
+  margin-top: 16px
+}
+
+/*.footer_top [class^="icon-"]:nth-child(odd), 
 .footer_top [class*=" icon-"]:nth-child(odd) {
   margin-bottom: 16px;
 }
@@ -575,10 +580,24 @@ select {
 .footer_top [class^="icon-"]:nth-child(even), 
 .footer_top [class*=" icon-"]:nth-child(even) {
   margin-top: 16px;
-}
+}*/
 
 .footer_top span {
   display: inline-block;
+  vertical-align: middle;
+}
+
+.footer_top ul a, .powered{
+  font-size: 14px;
+}
+
+.avisos {
+  text-align: right;
+}
+
+.powered span a{
+  font-weight: bold;
+  color: #f7d917;
 }
 
 .footer_bottom {
